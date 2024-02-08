@@ -1,0 +1,3 @@
+--Faça uma busca de quantos livros não estão com o status publicado e pageCount menor que 300:
+
+db.biblioteca.find({ $and: [{status: {$ne: "PUBLISH"}}, {pageCount: {$lt: 300}}]})

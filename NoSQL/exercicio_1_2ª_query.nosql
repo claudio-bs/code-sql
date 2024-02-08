@@ -1,0 +1,3 @@
+--Faça uma busca de livros que contém as palavras MongoDB e SQL Server no título:
+
+db.biblioteca.find({title: {$regex: /MongoDB|SQL Server/}}, {title: 1})

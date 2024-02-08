@@ -1,0 +1,3 @@
+--Usando Expressão Regular, busque livros que contém a palavra JAVA ou Mobile na descrição do livro (LongDescription), lembrando que deve trazer todas as palavras independente de começa com maiúsculo ou minúsculo:
+
+db.biblioteca.find({longDescription: {$regex: /JAVA|java|Java|Mobile|mobile|MOBILE/}}, {title: true, longDescription: true})

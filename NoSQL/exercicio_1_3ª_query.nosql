@@ -1,0 +1,3 @@
+--Faça uma busca com expressão regular onde ISBN começa com 18:
+
+db.biblioteca.find({isbn: {$regex: /^18/}}, {isbn: 1})
